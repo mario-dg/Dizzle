@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="201.0" maxWidth="495.0" minHeight="201.0" minWidth="495.0" prefHeight="201.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLStartUpController">
+   <children>
+      <VBox prefHeight="201.0" prefWidth="495.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="489.0" spacing="10.0">
+                     <children>
+                        <RadioButton fx:id="rdBttnLevel1" mnemonicParsing="false" selected="true" text="Level 1">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="rdBttnLevel2" mnemonicParsing="false" text="Level 2">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="rdBttnLevel3" mnemonicParsing="false" text="Level 3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="100.0" prefWidth="494.0">
+                     <children>
+                        <Label text="Amount of Computers">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Slider fx:id="sldrAmountComputers" blockIncrement="1.0" majorTickUnit="1.0" max="3.0" maxWidth="173.0" min="1.0" minorTickCount="0" prefHeight="38.0" prefWidth="173.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="102.0" prefWidth="339.0" spacing="25.0">
+               <children>
+                  <Button fx:id="bttnStartGame" mnemonicParsing="false" onAction="#handleStartGame" prefHeight="55.0" prefWidth="136.0" text="Start" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
